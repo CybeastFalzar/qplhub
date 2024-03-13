@@ -1,0 +1,123 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color: rgba(243, 94, 243, 0.603); */
+  background-color: #422980;
+}
+
+rect {
+ 
+}
+
+#menu-title {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: white;
+}
+
+#room-title{
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-align: center;
+  margin-right: 5px;
+  color: whitesmoke;
+}
+
+#body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-wrap: wrap;
+  margin-left: 0.5%;
+  color: whitesmoke;
+}
+#room {
+  --hovered:0;
+}
+
+#room:hover {
+  --hovered: 1;
+  /* transform: translate(42px, 18px); */
+}
+
+/*the fade animations*/
+
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.flex-b {
+  display: flex;
+
+}
+
+.flex-b:first-child {
+  flex: 1 2 0;
+}
+
+.test {
+  flex: 1 1 0;
+}
+
+#map {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: cemter;
+}
+
+#layout, #grid {
+  grid-area: 1/1;
+}
+
+
+#layout {
+ /* border: solid 1px red; */
+ height: 100%;
+ width: 100%;
+}
+
+#grid {
+  /* border: solid 1px blue; */
+  /* position: absolute; */
+  z-index: 10;
+
+}
+
+@media only screen and (max-width: 767px) {
+  #map {
+  
+    
+    
+
+  }
+}
+  
+/* .system {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  
+}
+.image {
+  position: absolute;
+  z-index: 10;
+} */

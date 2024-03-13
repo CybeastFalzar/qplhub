@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .background-text {
+   
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 10px;
+    /* background-color: #453bf7; */
+    /* background-color: #8c0299; */
+    background-color: #422980;
+
+}
+
+
+
+#header-container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#header {
+   
+    /* background: url("./images/qpl_logo.png") no-repeat; */
+    /* background-size: contain; */
+    height: 100%;
+
+
+}
+
+#title-container {
+    height: 20%;
+    /* border-bottom: 2px solid black; */
+}
+
+#title-text {
+    font-size: 20vmin;
+    text-align: center;
+    font-family: "Roboto Slab"; 
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#title-slogan {
+    font-size: 4vmin;
+    text-align: center;
+    font-family: "proxima-nova", Raleway, Arial, sans-serif;
+    color: white;
+    
+}
+
+.button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 20px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+  }
+
+.button4 {
+    border-radius: 12px;
+}
+
+.nyc-img {
+    filter: drop-shadow(20px 20px 10px rgba(44, 2, 99, 0.616));
+}
+
+#mission {
+    position: relative;
+    height: 40%;
+    background-color: #ff8300;
+    /* background-color: #ffaf0f; */
+    /* background-color: rgba(255, 83, 4, 0.747); */
+    
+}
+
+
+
+#section-text {
+    font-size: 5vmin;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', 'Helvetica', and sans-serif; 
+    /* color: #fa5d0f; */
+    /* color: #130245; */
+    color: whitesmoke;
+    padding-top: 5%;
+    text-transform: uppercase;
+}
+
+
+
+.wave {
+    background-color: #ff8300;
+}

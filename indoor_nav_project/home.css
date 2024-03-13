@@ -1,0 +1,282 @@
+* {
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', 'Helvetica', and sans-serif;
+    scroll-behavior: smooth;   
+}
+
+
+#header-container{
+    height: 10%;
+    width: 100%;
+}
+
+
+#header {
+    position: relative;
+    background: url("./images/qpl_logo.png") no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin-right: 30%;
+}
+
+/* Hero Section */
+.hero_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    /* margin-bottom: 35vh; */
+    z-index: 1;
+    width: 90%;
+    max-width: 1720px;
+    /* padding-right: 50px;
+    padding-left: 50px; */
+}
+.hero_content {
+    width: 100%;
+}
+
+.hero_content h1 {   
+    font-size: 62px;
+    color:rgb(93, 95, 95);
+}
+
+.hero_container h2 {
+    font-size: 22px;
+    font-weight: lighter;
+    color: rgb(136, 171, 171);
+    /* margin-top: 2rem; */
+}
+
+/* Book an Appointment Button */
+.bookbtn{
+    background-color: teal;
+    padding: 14px 30px;
+    border: 3px solid rgb(65, 255, 255);
+    border-radius: 18px; 
+    margin-top: 2rem;
+    position: relative;
+    transition: all 0.35s;
+    overflow: hidden;
+}
+
+.bookbtn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Demo Button */
+.demobtn{
+    background-color: #E6E6E6;
+    border: 3px solid #bab9b9;
+    border-radius: 18px; 
+    padding: 14px 30px;
+    margin-top: 2rem;
+    position: relative;
+    left:50px;
+    transition: all 0.35s;
+}
+
+.demobtn a{
+    position: relative;
+    z-index: 2;
+    color: #808080;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.demobtn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to top, #a7a4be 0%, #141910 120%);
+    transition: all 0.35s;
+    border-radius: 17px; 
+}
+
+.demobtn a:hover{
+    color:white;
+}
+
+.demobtn:hover:after {
+    width: 100%;
+}
+
+#home_img {
+   width: 100%;
+}
+
+/* Why Walkapaw */
+.how_container {
+    align-items: center;
+    z-index: 1;
+    font-weight: lighter;
+    /* border: 1px solid black; */
+    /* margin: 1em auto; */
+}
+
+.how_moto_content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    /* padding-right: 50px;
+    padding-left: 50px; */
+    font-size: 28px;
+    /* width:100%; */
+    color:rgb(93, 95, 95);
+    /* position:relative; */
+    /* top:-430px;
+    left:430px; */
+    
+}
+
+.how_list {
+    /* border: 1px solid black; */
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+
+.how_list ol {
+    list-style:none;
+    /* width:70%; */
+}
+
+.how_list li {
+    font-size: 21px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    position:relative;
+    top:-210px;
+    
+}
+.how_list span {
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: larger;
+    color:rgb(93, 95, 95);
+
+}
+.how_list li .pets {
+    position:absolute;
+    left:-200px;
+    border-radius: 50%;
+    display:flex;
+}
+
+#divider2 {
+    position: relative;
+    top:165px;
+    left:-89px;
+    justify-self: center;
+    align-items: center;
+}
+
+#divider3 {
+    position: relative;
+    top:335px;
+    left:-182px;
+    justify-self: center;
+    align-items: center;
+}
+
+.how_list li p{
+    font-size: 18px;
+    color: black;
+    padding-left: 130px;
+    margin-top: 3%;
+    line-height: 21px;
+    opacity: 0.6;
+    align-content: center;
+}
+
+.wave{
+    margin-top: -40vh;
+    /* margin-bottom: 50vh;  */
+}
+
+/* Info section636 CSS */
+
+.infoSection{
+    height: 900px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.infoHeader{
+    text-align: center;
+    position:relative;
+    bottom:50px;
+
+}
+.infoHeader h1 {
+    color:rgb(93, 95, 95);
+    font-size: 40px;
+}
+.infoHeader P{
+    color:teal;
+    font-size: 20px;
+
+}
+.infoCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoCards .card{
+    position: relative;
+    height: 390px;
+    width: 306px;
+    background: #F2F2F2;
+    box-shadow: 0 8px 16px 0 rgba(117, 246, 214, 0.2);
+    border: 5px double teal;
+    border-radius: 70px;
+}
+
+.infoCards img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+
+.loveMe .fa-heart {
+    animation: grow 1s linear;
+    transform: translate(-50%, -50%) scale(0);
+    color:red;
+    z-index: 5;
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity:0;
+    }
+}
+
+.cardContent h3{
+    text-align: center; 
+    opacity: 0.7;
+    margin-top: 200px;
+    padding:10px 10px 10px 10px;
+}
+.cardContent p{
+    text-align: center; 
+    font-size:14px;
+}
