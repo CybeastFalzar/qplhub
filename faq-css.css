@@ -1,0 +1,98 @@
+body {
+    
+    /* background-color: #f87330; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.page {
+    /* background-color: #f87330; */
+    background-color: #422980;
+    padding-bottom: 2%;
+}
+
+#faq-container {
+   
+   padding-top: 2%;
+}
+
+#faq-title {
+    margin: 3%;
+    /* text-align: center; */
+    font-size: 5vmin;
+    font-family: "proxima-nova", Raleway, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.faq-head {
+    color: white;
+    /* padding-right: 40%; */
+    margin-right: 100%;
+    filter: drop-shadow(20px 20px 10px rgba(44, 2, 99, 0.719));
+}
+
+
+
+h5.mb-0 {
+  
+}
+
+p.mb-0  {
+    margin-left: 2%;
+}
+
+/* #card-4 {
+    filter: drop-shadow(20px 20px 10px rgba(44, 2, 99, 0.411));
+} */
+
+#card-4 {
+    filter: drop-shadow(20px 20px 10px rgba(44, 2, 99, 0.411));
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e7eaed;
+    border-radius: 20px;
+}
+
+.accordion .card {
+    margin-bottom: .75rem;
+    box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+    border-radius: .25rem;
+}
+
+.accordion .card .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+}
+
+.grid-margin {
+    margin-bottom: 2rem;
+}
+
+.accordion .card .card-header a[aria-expanded="true"]:before {
+    content: "\F374";
+}
+
+.accordion .card .card-header a:before {
+    font-family: "Material Design Icons";
+    position: absolute;
+    right: 7px;
+    top: 0;
+    font-size: 23px;
+    display: block;
+}
+
+.accordion .card .card-header a[aria-expanded="false"]:before {
+    content: "\F415";
+}
