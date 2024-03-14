@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +92,17 @@
     
 }
 
+.features-icons-icon {
+    font-size: 10rem;
+    padding: 20% 20%;
+    color: #422980;
+}
 
+
+.goal-item {
+    text-align: center;
+    color: white;
+}
 
 #section-text {
     font-size: 5vmin;
