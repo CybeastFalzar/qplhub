@@ -70,6 +70,13 @@ function draw() {
         let activityRoom = paper.circle(31.5*25+10, 26.2*25+5, 7);
         activityRoom.attr({ fill: "purple", 'fill-opacity': 1, 'stroke-width': 1});
 
+        let computerDesk = paper.circle(26*25+10, 15*25+5, 7);
+        computerDesk.attr({ fill: "purple", 'fill-opacity': 1, 'stroke-width': 1});
+
+        let movieRental = paper.circle(38*25+10, 14.5*25+5, 7);
+        movieRental.attr({ fill: "purple", 'fill-opacity': 1, 'stroke-width': 1});
+
+
         function hoverStart(event) {
           let node_x = ((event.target.cx.baseVal.value)-10)/25;
           let node_y = ((event.target.cy.baseVal.value)-5)/25;
@@ -78,6 +85,12 @@ function draw() {
           }
           if (node_x == 31.5 & node_y == 26.2) {
             activityRoom.animate({fill: "orange", transform: "s1.5"}, 250, "linear", function(){});
+          }
+          if (node_x == 26 & node_y == 15) {
+            computerDesk.animate({fill: "orange", transform: "s1.5"}, 250, "linear", function(){});
+          }
+          if (node_x == 38 & node_y == 14.5) {
+            movieRental.animate({fill: "orange", transform: "s1.5"}, 250, "linear", function(){});
           }
         }
         
@@ -90,6 +103,12 @@ function draw() {
           if (node_x == 31.5 & node_y == 26.2) {
             activityRoom.animate({fill: "purple", transform: "s1.0"}, 250, "linear", function(){});
           }   
+          if (node_x == 26 & node_y == 15) {
+            computerDesk.animate({fill: "purple", transform: "s1.0"}, 250, "linear", function(){});
+          }   
+          if (node_x == 38 & node_y == 14.5) {
+            movieRental.animate({fill: "purple", transform: "s1.0"}, 250, "linear", function(){});
+          }   
         }
 
         office.hover(hoverStart, hoverEnd);
@@ -97,8 +116,12 @@ function draw() {
 
         activityRoom.hover(hoverStart, hoverEnd);
         activityRoom.click(infoHandler);
+
+        computerDesk.hover(hoverStart, hoverEnd);
+        computerDesk.click(infoHandler);
     
-                
+        movieRental.hover(hoverStart, hoverEnd);
+        movieRental.click(infoHandler);        
         // Check http://raphaeljs.com/reference.html#Raphael for other ways of creating the paper
     });
 
@@ -144,7 +167,12 @@ if (node_x == 31.5 & node_y == 26.2) {
   if (node_x == 7 & node_y == 6) {
     predictedTitle = "Admin Office";
   }
-
+  if (node_x == 26 & node_y == 15) {
+    predictedTitle = "Computer Desk";
+  }
+  if (node_x == 38 & node_y == 14.5) {
+    predictedTitle = "Movie Rentals";
+  }
   if (fade_state == true) {
     title.innerHTML = predictedTitle;
     div.style.animation = "fade-in 1s forwards";
